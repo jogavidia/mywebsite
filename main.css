@@ -9933,8 +9933,12 @@ header ul.navbar-nav li.nav-item.active a:focus, header ul.navbar-nav li.nav-ite
 }
 
 /* ====================================================================================================================
- * CUSTOM CSS
+ * CUSTOM SCSS
  * ====================================================================================================================*/
+.flex-direction-nav a:before {
+  color: rgba(244, 121, 32, 0.8) !important;
+}
+
 .flex-caption {
   background: transparent !important;
   text-align: center;
