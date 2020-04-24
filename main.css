@@ -10245,6 +10245,8 @@ header ul.navbar-nav li.nav-item.active a:focus, header ul.navbar-nav li.nav-ite
 body.home {
   /* ////// CAROUSEL OWL /////// */
   /* ////// END CAROUSEL OWL /////// */
+  /* ////// ENTREVISTA VIAJERA /////// */
+  /* ////// END ENTREVISTA VIAJERA /////// */
 }
 body.home .hashtag {
   display: none;
@@ -10258,40 +10260,38 @@ body.home .hashtag .hash a {
 }
 body.home .hashtag .hash:hover {
   border: none;
-  transition: 1s ease;
 }
 body.home .hashtag .hash:hover a {
   color: #c9c9c9;
-  transition: 1s ease;
   text-decoration: none;
 }
-body.home .wrap-container {
+body.home .wrap-container-dvp {
   background: #000000;
-  padding: 20px 0px;
+  padding: 20px 20px;
   margin-top: 40px;
 }
-body.home .wrap-container .special-cards {
-  margin: 0px;
+body.home .wrap-container-dvp .special-cards {
   max-width: 960px;
   text-align: center;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
-body.home .wrap-container .special-cards .card {
+body.home .wrap-container-dvp .special-cards .card {
   transition: 0.3s;
   border: none;
   border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
   font-family: "Ubuntu", sans-serif;
 }
-body.home .wrap-container .special-cards .card img {
+body.home .wrap-container-dvp .special-cards .card img {
   border-radius: 0.75rem 0.75rem 0 0;
 }
-body.home .wrap-container .special-cards .card a {
+body.home .wrap-container-dvp .special-cards .card a {
   height: 5.6rem;
   position: relative;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.4rem;
 }
-body.home .wrap-container .special-cards .card a span {
+body.home .wrap-container-dvp .special-cards .card a span {
   color: #4d4d4d;
   padding: 0 2rem;
   position: absolute;
@@ -10302,28 +10302,31 @@ body.home .wrap-container .special-cards .card a span {
   transform: translateY(-50%);
   -ms-transform: translateY(-50%);
 }
-body.home .wrap-container button:focus {
+body.home .wrap-container-dvp button:focus {
   border-width: 0px;
   border: none;
   border-color: transparent;
   outline: none;
 }
-body.home .wrap-container .dvp-btn {
+body.home .wrap-container-dvp .dvp-btn {
   text-align: center;
 }
-body.home .wrap-container .dvp-btn button {
+body.home .wrap-container-dvp .dvp-btn button {
   padding-left: 1rem;
-  background-image: linear-gradient(#4a4a4a, white);
+  background-image: linear-gradient(to bottom, #4a4a4a, white);
   border-radius: 0.5rem;
   border: 1px solid #c9c9c9;
+  color: #303030;
+  transition: all 5s ease;
 }
-body.home .wrap-container .dvp-btn button:hover {
-  background-image: linear-gradient(#303030, #c9c9c9);
+body.home .wrap-container-dvp .dvp-btn button:hover {
+  background-image: linear-gradient(to bottom, #303030, #c9c9c9);
 }
-body.home .wrap-container .dvp-btn button:hover a {
+body.home .wrap-container-dvp .dvp-btn button:hover a {
   color: #000000;
+  transition: 0.3s ease;
 }
-body.home .wrap-container .dvp-btn button a {
+body.home .wrap-container-dvp .dvp-btn button a {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-size: 2rem;
@@ -10331,7 +10334,7 @@ body.home .wrap-container .dvp-btn button a {
   padding: 0.15rem 1rem;
   text-decoration: none;
 }
-body.home .wrap-container .dvp-btn button a span:before {
+body.home .wrap-container-dvp .dvp-btn button a span:before {
   font-family: "Font Awesome 5 Free";
   content: "";
   font-weight: 600;
@@ -10341,6 +10344,95 @@ body.home .wrap-container .dvp-btn button a span:before {
   border-right: 1px solid #c9c9c9;
   float: left;
   background: transparent;
+}
+body.home .wrap-container-ev {
+  width: 100%;
+  background: #ffffff;
+  padding: 3rem 1.5rem;
+}
+body.home .wrap-container-ev .entrevista-viajera {
+  max-width: 960px;
+  margin: 0 auto;
+  border: 1px solid #2384c6;
+}
+body.home .wrap-container-ev .entrevista-viajera > p {
+  background: #2384c6;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+body.home .wrap-container-ev .entrevista-viajera .content {
+  padding: 1.5rem;
+  background: #ffffff;
+  position: relative;
+}
+body.home .wrap-container-ev .entrevista-viajera .content .covers {
+  position: relative;
+  top: 0;
+}
+body.home .wrap-container-ev .entrevista-viajera .content .covers img {
+  position: relative;
+  width: 100%;
+}
+body.home .wrap-container-ev .entrevista-viajera .content .covers div.cover-lft, body.home .wrap-container-ev .entrevista-viajera .content .covers div.cover-rgth {
+  position: absolute;
+  top: 0;
+  float: left;
+  z-index: 9;
+  width: 50%;
+  background: rgba(244, 121, 32, 0.85);
+  height: 100%;
+}
+body.home .wrap-container-ev .entrevista-viajera .content .covers div.cover-rgth {
+  left: 50%;
+  background: rgba(240, 78, 35, 0.85);
+}
+body.home .wrap-container-ev .entrevista-viajera .content .summary {
+  color: #ffffff;
+  position: absolute;
+  z-index: 18;
+  top: 20px;
+  max-width: 50%;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  margin: 0 auto;
+  text-align: center;
+}
+body.home .wrap-container-ev .entrevista-viajera .content .summary h4 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3rem;
+}
+body.home .wrap-container-ev .entrevista-viajera .content .summary p {
+  text-shadow: 2px 2px 3px #410805;
+  margin-bottom: 2rem;
+}
+body.home .wrap-container-ev .entrevista-viajera .content .summary > button {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
+  border: none;
+  background: #ffffff;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+body.home .wrap-container-ev .entrevista-viajera .content .summary > button:hover {
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.7);
+}
+body.home .wrap-container-ev .entrevista-viajera .content .summary > button a {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #000000;
+  line-height: 1.2rem;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */
