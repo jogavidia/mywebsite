@@ -10289,7 +10289,7 @@ body.home .wrap-container-dvp .special-cards .card a {
   height: 5.6rem;
   position: relative;
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 body.home .wrap-container-dvp .special-cards .card a span {
   color: #4d4d4d;
@@ -10395,7 +10395,7 @@ body.home .wrap-container-ev .entrevista-viajera .content .summary {
   position: absolute;
   z-index: 18;
   top: 20px;
-  max-width: 50%;
+  max-width: 90%;
   left: 0;
   right: 0;
   top: 50%;
@@ -10433,6 +10433,28 @@ body.home .wrap-container-ev .entrevista-viajera .content .summary > button a {
   color: #000000;
   line-height: 1.2rem;
   text-decoration: none;
+}
+@media (min-width: 40em) {
+  body.home .wrap-container-ev .entrevista-viajera .content .summary {
+    max-width: 50%;
+  }
+  body.home .wrap-container-ev .entrevista-viajera .content .summary h4 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    padding: 0;
+  }
+}
+@media (min-width: 23.4375em) {
+  body.home .wrap-container-ev .entrevista-viajera .content .summary {
+    max-width: 100%;
+  }
+  body.home .wrap-container-ev .entrevista-viajera .content .summary h4 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  body.home .wrap-container-ev .entrevista-viajera .content .summary p {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
