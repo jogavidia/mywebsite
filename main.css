@@ -5,7 +5,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans:300|Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans:300|Ubuntu:300,400&display=swap");
 @import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
 :root {
   --blue: #007bff;
@@ -10242,47 +10242,36 @@ header ul.navbar-nav li.nav-item.active a:focus, header ul.navbar-nav li.nav-ite
   background: #869791;
 }
 
-body.home .hashtag {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  column-gap: 0rem;
-  row-gap: 2rem;
-  max-width: 680px;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0.2rem;
-  font-family: "Ubuntu", sans-serif;
+body.home {
+  /* ////// CAROUSEL OWL /////// */
+  /* ////// END CAROUSEL OWL /////// */
 }
-body.home .hashtag .hash {
-  border-left: 1px solid #e3e3e3;
-  border-right: 1px solid #e3e3e3;
+body.home .hashtag {
+  display: none;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  text-align: center;
+}
+body.home .hashtag .hash a {
+  color: #c9c9c9;
 }
 body.home .hashtag .hash:hover {
-  background: #d6d6d6;
   border: none;
   transition: 1s ease;
 }
 body.home .hashtag .hash:hover a {
-  color: #ffffff;
+  color: #c9c9c9;
   transition: 1s ease;
-}
-body.home .hashtag .hash:nth-child(2) {
-  border: none;
-}
-body.home .hashtag .hash a {
-  display: inline-block;
-  padding: 1rem;
-  font-size: 2rem;
-  color: #b0b0b0;
   text-decoration: none;
 }
 body.home .wrap-container {
   background: #000000;
-  margin-top: 40px;
   padding: 20px 0px;
+  margin-top: 40px;
 }
 body.home .wrap-container .special-cards {
-  margin: 40px 0px;
+  margin: 0px;
   max-width: 960px;
   text-align: center;
   margin: 0 auto;
@@ -10300,11 +10289,11 @@ body.home .wrap-container .special-cards .card a {
   height: 5.6rem;
   position: relative;
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 body.home .wrap-container .special-cards .card a span {
   color: #4d4d4d;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
   position: absolute;
   top: 50%;
   left: 0;
@@ -10312,6 +10301,46 @@ body.home .wrap-container .special-cards .card a span {
   margin: 0 auto;
   transform: translateY(-50%);
   -ms-transform: translateY(-50%);
+}
+body.home .wrap-container button:focus {
+  border-width: 0px;
+  border: none;
+  border-color: transparent;
+  outline: none;
+}
+body.home .wrap-container .dvp-btn {
+  text-align: center;
+}
+body.home .wrap-container .dvp-btn button {
+  padding-left: 1rem;
+  background-image: linear-gradient(#4a4a4a, white);
+  border-radius: 0.5rem;
+  border: 1px solid #c9c9c9;
+}
+body.home .wrap-container .dvp-btn button:hover {
+  background-image: linear-gradient(#303030, #c9c9c9);
+}
+body.home .wrap-container .dvp-btn button:hover a {
+  color: #000000;
+}
+body.home .wrap-container .dvp-btn button a {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #303030;
+  padding: 0.15rem 1rem;
+  text-decoration: none;
+}
+body.home .wrap-container .dvp-btn button a span:before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-weight: 600;
+  text-align: left;
+  padding-right: 10px;
+  font-size: 2rem;
+  border-right: 1px solid #c9c9c9;
+  float: left;
+  background: transparent;
 }
 
 /*# sourceMappingURL=main.css.map */
