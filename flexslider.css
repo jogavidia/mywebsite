@@ -50,6 +50,7 @@
  .flexslider {
    margin: 0;
    padding: 0;
+   overflow: hidden;
  }
  .flexslider .slides > li {
    display: none;
@@ -130,7 +131,7 @@ html[xmlns] .flexslider .slides {
   height: 72px;
   margin: -20px 0 0;
   position: absolute;
-  top: 50%;
+  top: 45%;
   z-index: 10;
   overflow: hidden;
   opacity: 0;
@@ -142,7 +143,7 @@ html[xmlns] .flexslider .slides {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.flex-direction-nav a:before {
+/* .flex-direction-nav a:before {
   content: "\f053";
   font-family: FontAwesome;
   font-size: 52px;
@@ -151,7 +152,7 @@ html[xmlns] .flexslider .slides {
 }
 .flex-direction-nav a.flex-next:before {
   content: '\f054';
-}
+} */
 .flex-direction-nav .flex-prev {
   left: -50px;
 }
@@ -213,6 +214,7 @@ html[xmlns] .flexslider .slides {
   text-align: center;
   padding: 20px;
   background: white;
+  display: none;
 }
 .flex-control-nav li {
   margin: 0 6px;
