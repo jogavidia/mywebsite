@@ -10434,14 +10434,15 @@ body.home .wrap-container-ev .entrevista-viajera .content .summary > button a {
   line-height: 1.2rem;
   text-decoration: none;
 }
-@media (min-width: 40em) {
+@media (min-width: 20em) {
   body.home .wrap-container-ev .entrevista-viajera .content .summary {
-    max-width: 50%;
+    max-width: 100%;
   }
   body.home .wrap-container-ev .entrevista-viajera .content .summary h4 {
-    font-size: 2.5rem;
-    margin-top: 0;
-    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+  body.home .wrap-container-ev .entrevista-viajera .content .summary p {
+    display: none;
   }
 }
 @media (min-width: 23.4375em) {
@@ -10449,11 +10450,23 @@ body.home .wrap-container-ev .entrevista-viajera .content .summary > button a {
     max-width: 100%;
   }
   body.home .wrap-container-ev .entrevista-viajera .content .summary h4 {
-    font-size: 2.5rem;
     margin-bottom: 1.5rem;
   }
   body.home .wrap-container-ev .entrevista-viajera .content .summary p {
     display: none;
+  }
+}
+@media (min-width: 40em) {
+  body.home .wrap-container-ev .entrevista-viajera .content .summary {
+    max-width: 60%;
+  }
+  body.home .wrap-container-ev .entrevista-viajera .content .summary h4 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    padding: 0;
+  }
+  body.home .wrap-container-ev .entrevista-viajera .content .summary p {
+    display: inline-block;
   }
 }
 
