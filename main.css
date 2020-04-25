@@ -9990,7 +9990,7 @@ header ul.navbar-nav li.nav-item.active a:focus, header ul.navbar-nav li.nav-ite
   }
 
   .flex-caption p {
-    font-size: 5rem;
+    font-size: 4rem;
     padding-bottom: 1.25rem;
   }
   .flex-caption span {
@@ -10001,15 +10001,21 @@ header ul.navbar-nav li.nav-item.active a:focus, header ul.navbar-nav li.nav-ite
     border-radius: 1rem 1rem 0 0;
   }
 }
-@media (min-width: 48em) {
+@media (min-width: 37.5em) {
   .flex-caption p {
-    font-size: 6rem;
-    padding-bottom: 1.75rem;
+    font-size: 5rem;
+    padding-bottom: 2.5rem;
     left: -12%;
   }
   .flex-caption span {
     font-size: 3.5rem;
     bottom: -0.9rem;
+  }
+}
+@media (min-width: 48em) {
+  .flex-caption p {
+    font-size: 6rem;
+    padding-bottom: 3rem;
   }
 }
 /*
@@ -10520,8 +10526,12 @@ body.home .wrap-container-ev .entrevista-viajera .content .summary > button a {
 }
 
 @media (min-width: 20em) {
-  div.owl-theme .owl-dots, div.owl-theme .owl-nav {
+  div.owl-theme .owl-nav {
     display: none;
+  }
+
+  div.owl-theme .owl-dots {
+    margin-top: 1rem;
   }
 
   .dvp-btn {
@@ -10529,11 +10539,6 @@ body.home .wrap-container-ev .entrevista-viajera .content .summary > button a {
   }
 }
 @media (min-width: 37.5em) {
-  div.owl-theme .owl-dots {
-    margin-top: 1rem;
-    display: inline-block;
-  }
-
   .dvp-btn {
     margin-top: 0.5rem;
   }
