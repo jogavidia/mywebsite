@@ -1,3 +1,3 @@
 # mywebsite
 
-![]images/aguasturquesas.jpg
+![](images/aguasturquesas.jpg)
