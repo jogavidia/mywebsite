@@ -1,0 +1,3 @@
+# mywebsite
+
+![]images/aguasturquesas.jpg
