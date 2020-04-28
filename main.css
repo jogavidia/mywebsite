@@ -9973,7 +9973,10 @@ header ul.navbar-nav li.nav-item.active a:focus, header ul.navbar-nav li.nav-ite
     right: 0;
     margin-bottom: 0rem;
   }
-  .flex-caption span {
+  .flex-caption a:hover {
+    text-decoration: none;
+  }
+  .flex-caption a span {
     font-family: "Dancing Script", cursive;
     font-size: 2.25rem;
     background: #f47920;
@@ -9993,12 +9996,9 @@ header ul.navbar-nav li.nav-item.active a:focus, header ul.navbar-nav li.nav-ite
     font-size: 4rem;
     padding-bottom: 1.25rem;
   }
-  .flex-caption span {
+  .flex-caption a span {
     font-size: 3rem;
-    padding: 0.2rem 6rem 0.5rem 6rem;
-    position: relative;
     bottom: -1.2rem;
-    border-radius: 1rem 1rem 0 0;
   }
 }
 @media (min-width: 37.5em) {
@@ -10007,7 +10007,7 @@ header ul.navbar-nav li.nav-item.active a:focus, header ul.navbar-nav li.nav-ite
     padding-bottom: 2.5rem;
     left: -12%;
   }
-  .flex-caption span {
+  .flex-caption a span {
     font-size: 3.5rem;
     bottom: -0.9rem;
   }
@@ -10284,23 +10284,7 @@ body.home {
   /* ////// END CAROUSEL OWL /////// */
   /* ////// ENTREVISTA VIAJERA /////// */
   /* ////// END ENTREVISTA VIAJERA /////// */
-}
-body.home .hashtag {
-  display: none;
-  font-family: "Ubuntu", sans-serif;
-  text-transform: uppercase;
-  font-size: 4.5rem;
-  text-align: center;
-}
-body.home .hashtag .hash a {
-  color: #c9c9c9;
-}
-body.home .hashtag .hash:hover {
-  border: none;
-}
-body.home .hashtag .hash:hover a {
-  color: #c9c9c9;
-  text-decoration: none;
+  /* ////// BLOG CTPERU /////// */
 }
 body.home .wrap-container-dvp {
   background: #000000;
@@ -10314,13 +10298,10 @@ body.home .wrap-container-dvp .special-cards {
   padding: 0 1.5rem;
 }
 body.home .wrap-container-dvp .special-cards .card {
-  transition: 0.3s;
-  border: none;
-  border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
-  font-family: "Ubuntu", sans-serif;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 body.home .wrap-container-dvp .special-cards .card img {
-  border-radius: 0.75rem 0.75rem 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 body.home .wrap-container-dvp .special-cards .card a {
   height: 5.6rem;
@@ -10335,7 +10316,6 @@ body.home .wrap-container-dvp .special-cards .card a span {
   top: 50%;
   left: 0;
   right: 0;
-  margin: 0 auto;
   transform: translateY(-50%);
   -ms-transform: translateY(-50%);
 }
@@ -10524,6 +10504,14 @@ body.home .wrap-container-ev .entrevista-viajera .content .summary > button a {
     box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
   }
 }
+body.home .wrap-container-blog h3 {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  border-top: 0.025rem solid #4d4d4d;
+  border-bottom: 0.025rem solid #4d4d4d;
+  padding: 0.5rem 0;
+  margin: 0;
+}
 
 @media (min-width: 20em) {
   div.owl-theme .owl-nav {
@@ -10542,6 +10530,98 @@ body.home .wrap-container-ev .entrevista-viajera .content .summary > button a {
   .dvp-btn {
     margin-top: 0.5rem;
   }
+}
+:root {
+  --time: 0.507s;
+}
+
+.cards {
+  display: grid;
+  grid-gap: 0rem;
+  grid-auto-rows: 1fr;
+  padding: 0;
+  background-color: #e3e3e3;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+}
+.cards .card {
+  perspective: 120rem;
+  display: flex;
+  transition: z-index, transform calc(var(--time) / 4);
+  transition-delay: var(--time), 0s;
+  text-decoration: none;
+  color: inherit;
+  z-index: 0;
+  background-color: #ffffff;
+  border: none;
+}
+.cards .card:hover {
+  transition-delay: 0s;
+  z-index: 1;
+}
+.cards .card:active {
+  transform: scale(0.975);
+}
+
+.card-body {
+  display: flex;
+  flex: 1;
+  padding: 0;
+  transform-style: preserve-3d;
+  transition: var(--time) transform;
+}
+.card:hover .card-body, .card:focus .card-body {
+  transform: rotateY(180deg);
+}
+.card-body .card-front, .card-body .card-back {
+  display: flex;
+  align-items: center;
+  background-color: #c9c9c9;
+  box-sizing: border-box;
+  padding: 0;
+  min-height: 40rem;
+  backface-visibility: hidden;
+  min-width: 100%;
+}
+.card-body .card-front img, .card-body .card-back img {
+  min-width: 100%;
+  height: auto;
+}
+.card-body .card-back {
+  transform: rotateY(180deg) translate(100%, 0);
+  transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  background: #303030;
+  padding: 2rem;
+}
+.card-body .card-back div.back-wrapper {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f47920;
+  position: relative;
+}
+.card-body .card-back div.back-wrapper .info-flip-card {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 20rem;
+  margin: 0 auto;
+  text-align: center;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+.card-body .card-back div.back-wrapper .info-flip-card h4 {
+  color: #f47920;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+}
+.card-body .card-back div.back-wrapper .info-flip-card p a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+  display: inline-block;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */
