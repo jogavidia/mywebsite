@@ -1,18 +1,23 @@
 {
-  "name": "static-ctperu",
+  "name": "start-prjct",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "run-script-os",
+    "start:win32": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 3001 --browser \"C:\\Program Files\\Firefox Developer Edition\\firefox.exe\"",
+    "//": "Hello! If you are having trouble running this command. Try changing Firefox Developer Edition to FirefoxDeveloperEdition",
+    "start:darwin:linux": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 3001 --browser 'google chrome'",
     "deploy": "gh-pages -d build"
   },
   "author": "joga",
   "license": "MIT",
-  "home": "https://jogavidia.github.io/mywebsite",
+  "homepage": "https://jogavidia.github.io/mywebsite",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "browser-sync": "^2.26.7",
     "gh-pages": "^2.2.0",
-    "sass": "^1.26.5"
+    "run-script-os": "^1.1.1",
+    "sass": "^1.26.3"
   }
 }
